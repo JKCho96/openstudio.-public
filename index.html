@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<title>OPEN STUDIO — 쇼츠로 고객이 눈치보게 만드세요</title>
+<meta property="og:title" content="쇼츠로 고객이 눈치보게 만드세요">
+<meta property="og:description" content="팔로워 0으로 신규 고객을 공장처럼 찍어내세요">
+<meta name="theme-color" content="#ffffff">
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-M11YH95RT9"></script>
+<script>
+  window.dataLayer=window.dataLayer||[];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js',new Date()); gtag('config','G-M11YH95RT9');
+</script>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
+  html,body{background:#fff;width:100%;overflow-x:hidden;}
+  #wrap{position:relative;width:100%;max-width:520px;margin:0 auto;background:#fff;font-size:0;}
+  #wrap img{display:block;width:100%;height:auto;margin:0;padding:0;border:0;vertical-align:top;pointer-events:none;}
+  a.hot{position:absolute;display:block;z-index:5;border-radius:40px;}
+  a.hot:active{background:rgba(255,255,255,.12);}
+  #floatcta{position:fixed;left:50%;transform:translateX(-50%);bottom:16px;z-index:50;width:min(92%,480px);
+    background:#1a73e8;color:#fff;text-align:center;padding:16px 18px;border-radius:14px;font-weight:800;
+    font-family:-apple-system,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;font-size:17px;letter-spacing:-.3px;
+    text-decoration:none;box-shadow:0 8px 28px rgba(26,115,232,.45);display:block;}
+  #floatcta:active{filter:brightness(.92);}
+  #stat{position:fixed;top:8px;left:8px;z-index:99;background:rgba(0,0,0,.82);color:#0f0;
+    font:12px/1.5 monospace;padding:8px 10px;border-radius:8px;display:none;}
+</style>
+</head>
+<body>
+<div id="wrap">
+    <img src="slices/s0.jpg" alt="" loading="eager" draggable="false">
+    <img src="slices/s1.jpg" alt="" loading="eager" draggable="false">
+    <img src="slices/s2.jpg" alt="" loading="lazy" draggable="false">
+    <img src="slices/s3.jpg" alt="" loading="lazy" draggable="false">
+    <img src="slices/s4.jpg" alt="" loading="lazy" draggable="false">
+    <img src="slices/s5.jpg" alt="" loading="lazy" draggable="false">
+    <img src="slices/s6.jpg" alt="" loading="lazy" draggable="false">
+
+    <a class="hot" data-btn="1" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:13.993%;top:2.392%;width:45.813%;height:1.600%;"></a>
+    <a class="hot" data-btn="2" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:13.093%;top:20.518%;width:45.748%;height:1.600%;"></a>
+    <a class="hot" data-btn="3" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:13.463%;top:33.276%;width:45.748%;height:1.600%;"></a>
+    <a class="hot" data-btn="4" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:13.835%;top:60.678%;width:52.613%;height:1.600%;"></a>
+    <a class="hot" data-btn="5" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:13.093%;top:74.839%;width:52.624%;height:1.600%;"></a>
+    <a class="hot" data-btn="6" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:14.307%;top:89.002%;width:45.748%;height:1.600%;"></a>
+    <a class="hot" data-btn="7" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" style="left:14.005%;top:92.751%;width:52.109%;height:1.600%;"></a>
+
+</div>
+<a id="floatcta" href="https://docs.google.com/forms/d/e/1FAIpQLScCT0CoZv_lluhzOsr49VZ8wL_xm562016lbAtMAc4zrlulLA/viewform?usp=dialog" target="_blank" rel="noopener" data-btn="float">지금 문의하기 (터치)</a>
+<div id="stat"></div>
+<script>
+(function(){
+  function load(k,d){try{return JSON.parse(localStorage.getItem(k))||d;}catch(e){return d;}}
+  function save(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+  var S=load('os_stats',{visits:0,clicks:0,maxDepth:0,btnClicks:{}});
+  S.visits++; save('os_stats',S);
+  function depth(){var st=window.scrollY+window.innerHeight;
+    var d=Math.round(st/document.body.scrollHeight*100);
+    if(d>S.maxDepth){S.maxDepth=d;save('os_stats',S);}
+    if(window.gtag&&d%25===0){gtag('event','scroll_depth',{percent:d});}}
+  window.addEventListener('scroll',depth,{passive:true});
+  document.querySelectorAll('[data-btn]').forEach(function(a){
+    a.addEventListener('click',function(){var id=a.getAttribute('data-btn');
+      S.clicks++;S.btnClicks[id]=(S.btnClicks[id]||0)+1;save('os_stats',S);
+      if(window.gtag){gtag('event','cta_click',{button:id});}});});
+  if(location.search.indexOf('stats=1')>-1){var el=document.getElementById('stat');el.style.display='block';
+    setInterval(function(){var s=load('os_stats',S);
+      el.innerHTML='visits '+s.visits+'<br>clicks '+s.clicks+'<br>depth '+s.maxDepth+'%<br>btn '+JSON.stringify(s.btnClicks);},500);}
+})();
+</script>
+</body>
+</html>
